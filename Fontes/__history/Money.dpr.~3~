@@ -1,0 +1,15 @@
+program Money;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  uLogin in 'uLogin.pas' {FrmLogin},
+  u99Permissions.pas in 'Units\u99Permissions.pas.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.Run;
+end.
